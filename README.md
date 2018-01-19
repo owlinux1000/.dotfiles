@@ -1,0 +1,3 @@
+# My dotfiles
+
+mac & linux
