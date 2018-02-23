@@ -23,5 +23,8 @@ if status --is-login
 	
 	# 重複を削除する
 	set -x PATH (echo $PATH | tr ' ' '\n' | sort -ru)
+
+	source (conda info --root)/etc/fish/conf.d/conda.fish
+	rbenv init - | source
 	
 end
