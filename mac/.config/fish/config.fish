@@ -7,17 +7,17 @@ if status --is-login
 	set -x EDITOR emacsclient
 	
 	# Ruby library path
-	set -x RUBYLIB $HOME/all/ctf/tools/pwnlib
-	set -x RUBYLIB $HOME/all/ctf/tools/fsalib:$RUBYLIB
-	set -x RUBYLIB $HOME/all/ctf/tools/libcdb:$RUBYLIB
-	set -x RUBYLIB $HOME/all/ctf/tools/ctf:$RUBYLIB
+	#set -x RUBYLIB $HOME/all/ctf/tools/pwnlib
+	#set -x RUBYLIB $HOME/all/ctf/tools/fsalib:$RUBYLIB
+	#set -x RUBYLIB $HOME/all/ctf/tools/libcdb:$RUBYLIB
+	#set -x RUBYLIB $HOME/all/ctf/tools/ctf:$RUBYLIB
 
 	# Golang path
 	set -x GOPATH $HOME/.go
 
 	set -x PATH $HOME/all/ctf/tools $PATH
 	set -x PATH $HOME/.rbenv/shims $PATH
-	set -x PATH $HOME/miniconda3/bin $PATH
+	set -x PATH $HOME/.miniconda3/bin $PATH
 	set -x PATH $HOME/.cargo/bin $PATH
 	set -x PATH $HOME/.go/bin $PATH
 	
