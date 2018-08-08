@@ -1,3 +1,3 @@
 function wifi
-	networksetup -setairportpower en0 $argv;
+    networksetup -setairportpower en0 $argv;
 end
