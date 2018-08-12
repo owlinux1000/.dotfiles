@@ -11,10 +11,7 @@ if status --is-login
     # Golang
     set -x GOPATH $HOME/.go
     set -x PATH $HOME/.go/bin $PATH
-
-    # Ruby
-    set -x PATH $HOME/.rbenv/shims $PATH
-    rbenv init - | source
+    
     # Ruby library path
     #set -x RUBYLIB $HOME/all/ctf/tools/pwnlib
     #set -x RUBYLIB $HOME/all/ctf/tools/fsalib:$RUBYLIB
@@ -32,5 +29,8 @@ if status --is-login
     
     # Removce duplicating PATH
     set -x PATH (echo $PATH | tr ' ' '\n' | sort -ru)
-	
+    
+    # Ruby
+    set -x PATH $HOME/.rbenv/shims $PATH
+    rbenv init - | source
 end
