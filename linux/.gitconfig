@@ -1,0 +1,8 @@
+[user]
+        name = owlinux1000
+        email = encry1024@gmail.com
+[alias]
+        st = status
+        df = diff
+        ci = commit
+        co = checkout
