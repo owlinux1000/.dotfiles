@@ -9,7 +9,7 @@ if status --is-login
     
     set fish_greeting
     
-    #source $HOME/.config/fish/private.fish
+    source $HOME/.config/fish/private.fish
 	
     set -x LANG ja_JP.UTF-8
     set -x LC_ALL ja_JP.UTF-8
@@ -34,9 +34,16 @@ if status --is-login
 
     # Ruby
     set -x PATH $HOME/.rbenv/shims $PATH
-    set -x PATH $HOME/.pyenv/shims $PATH
+    set -x PATH $HOME/.pyenv/shims $PATH    
     rbenv init - | source
     pyenv init - | source
 
     set -x PATH $HOME/.nimble/bin $PATH
 end
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[ -f /Users/chihiro/.dotfiles/mac/.config/yarn/global/node_modules/tabtab/.completions/serverless.fish ]; and . /Users/chihiro/.dotfiles/mac/.config/yarn/global/node_modules/tabtab/.completions/serverless.fish
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[ -f /Users/chihiro/.dotfiles/mac/.config/yarn/global/node_modules/tabtab/.completions/sls.fish ]; and . /Users/chihiro/.dotfiles/mac/.config/yarn/global/node_modules/tabtab/.completions/sls.fish
