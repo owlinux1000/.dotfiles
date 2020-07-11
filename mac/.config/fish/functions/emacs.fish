@@ -1,5 +1,5 @@
 function emacsclient
-    /usr/local/Cellar/emacs/26.1_1/bin/emacsclient $argv
+    /usr/local/bin/emacsclient $argv
 end
 
 function emacs
